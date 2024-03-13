@@ -1,9 +1,17 @@
-import Home from "@pages/Home";
+import Hero from "@components/Home/Hero";
+import Impact from "@components/Home/Impact";
+import Scroll from "@components/Home/Scroll.js";
+import What from "@components/Home/What";
 
-export default function Page() {
+function Home() {
   return (
-    <main>
-      <Home />
-    </main>
+    <div>
+      <Hero />
+      <Scroll />
+      <What />
+      <Impact />
+    </div>
   );
 }
+
+export default Home;
