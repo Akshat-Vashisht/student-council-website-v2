@@ -1,10 +1,11 @@
-import Carousel from "@components/Events/Carousel";
-import React from "react";
+import CarouselComponent from "@components/Events/Carousel";
+import Upcoming from "@components/Events/Upcoming";
 
 function page() {
   return (
     <div>
-      <Carousel />
+      <CarouselComponent />
+      <Upcoming />
     </div>
   );
 }
