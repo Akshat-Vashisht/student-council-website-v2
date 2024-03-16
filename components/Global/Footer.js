@@ -7,8 +7,8 @@ function Footer() {
   return (
     <div>
       <div className="flex flex-col justify-center px-8 py-8 font-bold bg-amber-100 max-md:px-5">
-        <div className="flex flex-col justify-center bg-lime-400 rounded-[59.945px] max-md:max-w-full">
-          <div className="flex justify-center items-center px-16 py-20 bg-lime-400 rounded-[59.945px] max-md:px-5 max-md:max-w-full">
+        <div className="flex flex-col justify-center bg-[#A7C643] rounded-[59.945px] max-md:max-w-full">
+          <div className="flex justify-center items-center px-16 py-20 bg-[#A7C643] rounded-[59.945px] max-md:px-5 max-md:max-w-full">
             <div className="flex flex-col items-center mt-5 mb-3 w-full max-w-[1161px] max-md:max-w-full">
               <div className="text-5xl text-center text-black capitalize leading-[53.34px] max-md:max-w-full">
                 Inspire Growth. Ignite Change
