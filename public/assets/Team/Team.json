@@ -1,0 +1,93 @@
+[
+  {
+    "index": 0,
+    "name": "Dr. Suraj Bhoyar",
+    "position": "Associate Director",
+    "role":"faculty",
+    "img": "https://64.media.tumblr.com/ac370690b4128eed56937065f508e37b/7caafd7848d21821-65/s400x600/a780adb4b491626f0be01da8256d4b3460d729af.gifv"
+  },
+  {
+    "index": 1,
+    "name": "Atharva Nimbalkar",
+    "position": "President",
+    "role":"coreTeam",
+    "img": "/assets/Team/atharva.JPG"
+  },
+  {
+    "index": 2,
+    "name": "Gurbani Gambhir",
+    "position": "Vice President",
+    "role":"coreTeam",
+    "img": "/assets/Team/gurbani.jpg"
+  },
+  {
+    "index": 3,
+    "name": "Yusra Khan",
+    "position": "University General Secretary",
+    "role":"coreTeam",
+    "img": "/assets/Team/yusra.jpg"
+  },
+  {
+    "index": 4,
+    "name": "Arya Sameer Paturkar",
+    "position": "Joint Secretary",
+    "role":"coreTeam",
+    "img": "/assets/Team/arya.jpeg"
+  },
+  {
+    "index": 5,
+    "name": "Shivtej Shete",
+    "position": "Treasurer",
+    "role":"team",
+    "img": "/assets/Team/shivtej.JPG"
+  },
+  {
+    "index": 6,
+    "name": "Sharvil Maind",
+    "position": "Cultural Secretary",
+    "role":"team",
+    "img": "/assets/Team/sharvil.jpg"
+  },
+  {
+    "index": 7,
+    "name": "Bhoumik Rajput",
+    "position": "Sports Secretary",
+    "role":"team",
+    "img": "/assets/Team/bhoumik.jpg"
+  },
+  {
+    "index": 8,
+    "name": "Utkarsha Undre",
+    "position": "NCC Secretary",
+    "role":"team",
+    "img": "/assets/Team/utkarsha.jpg"
+  },
+  {
+    "index": 9,
+    "name": "Mugdha Jadhav",
+    "position": "Wellbeing Secretary",
+    "role":"team",
+    "img": "/assets/Team/mugdha.jpg"
+  },
+  {
+    "index": 10,
+    "name": "Akshat Vashisht",
+    "position": "Technology Cluster Secretary",
+    "role":"team",
+    "img": "/assets/Team/akshat.jpg"
+  },
+  {
+    "index": 11,
+    "name": "Danika Patil",
+    "position": "Media and Outreach Secretary",
+    "role":"team",
+    "img": "/assets/Team/danika.png"
+  },
+  {
+    "index": 12,
+    "name": "Swayam Chavan",
+    "position": "Magazine/Editorial Secretary",
+    "role":"team",
+    "img": "/assets/Team/swayam.jpg"
+  }
+]
