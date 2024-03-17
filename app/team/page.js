@@ -1,8 +1,8 @@
 // import Test from "@components/Team/Test";
 // import { fetchEvents } from "@lib/actions/fetchEvents.action"
 
-import Card from "@components/Team/Card";
-import Star from "@public/assets/Star";
+import Card from "@components/Shared/Card";
+import Star from "@components/Shared/Star";
 import TeamJson from "../../public/assets/Team/Team.json"
 // const presidentData = {
 //   name: "Sankalp",
@@ -41,7 +41,7 @@ const page = async () => {
         <h1 className="text-black text-4xl font-black text-center">
           Faculty Coordinator
         </h1>
-        <Card data={TeamJson[0]} />
+        <Card useAs={"team"} data={TeamJson[0]} />
       </div>
 
       <div className="flex flex-col justify-center items-center gap-y-[5rem] ">
@@ -53,7 +53,7 @@ const page = async () => {
 
         <div className="flex flex-wrap gap-10 justify-evenly ">
           {TeamJson.filter(member=>member.role==="coreTeam").map((data) => {
-            return <Card data={data} />;
+            return <Card useAs={"team"} data={data} />;
           })}
         </div>
       </div>
@@ -67,7 +67,7 @@ const page = async () => {
 
         <div className="flex flex-wrap gap-10 justify-evenly">
           {TeamJson.filter(member=>member.role==="team").map((data) => {
-            return <Card data={data} />;
+            return <Card useAs={"team"} data={data} />;
           })}
         </div>
       </div>

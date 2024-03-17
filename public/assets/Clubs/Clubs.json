@@ -1,0 +1,84 @@
+[
+    {
+      "club_name": "Sample Club 1",
+      "club_detail": {
+        "description": "This is a sample club that focuses on various technical and non-technical activities. We aim to foster innovation and creativity among our members.",
+        "president": {
+          "name": "John Doe",
+          "contact_number": "+1234567890"
+        },
+        "faculty_coordinator": {
+          "name": "Dr. David Johnson",
+          "contact_number": "+1987654321"
+        },
+        "tags": ["technical", "non-technical"],
+        "thumbnail_photo": "https://news.stanford.edu/wp-content/uploads/2018/10/activities_fair_1478.jpg",
+        "cover_photo": "sample_club1_cover.jpg"
+      },
+      "events": [
+        {
+          "event_name": "Tech Symposium",
+          "date": "2024-04-15",
+          "location": "Conference Hall A",
+          "description": "A symposium showcasing the latest technological advancements."
+        },
+        {
+          "event_name": "Workshop on Coding",
+          "date": "2024-05-20",
+          "location": "Computer Lab 3",
+          "description": "A hands-on workshop aimed at improving coding skills."
+        }
+      ],
+      "photo_gallery": [
+        {
+          "photo": "photo1.jpg",
+          "description": "Members participating in a coding competition."
+        },
+        {
+          "photo": "photo2.jpg",
+          "description": "Group photo during the annual tech fest."
+        }
+      ]
+    },
+    {
+      "club_name": "Sample Club 2",
+      "club_detail": {
+        "description": "This is another sample club that focuses on community service and environmental sustainability.",
+        "president": {
+          "name": "Alice Smith",
+          "contact_number": "+1122334455"
+        },
+        "faculty_coordinator": {
+          "name": "Prof. Emily Brown",
+          "contact_number": "+1654321876"
+        },
+        "tags": ["community service", "environment"],
+        "thumbnail_photo": "https://www.chapman.edu/wilkinson/sociology/_files/sociology-anth-photos/soc-club-front-page.jpeg",
+        "cover_photo": "sample_club2_cover.jpg"
+      },
+      "events": [
+        {
+          "event_name": "Tree Plantation Drive",
+          "date": "2024-06-05",
+          "location": "City Park",
+          "description": "Planting trees to improve the environment and promote green spaces."
+        },
+        {
+          "event_name": "Food Drive",
+          "date": "2024-07-10",
+          "location": "Local Food Bank",
+          "description": "Collecting and distributing food to the needy in the community."
+        }
+      ],
+      "photo_gallery": [
+        {
+          "photo": "photo3.jpg",
+          "description": "Volunteers helping clean up a local beach."
+        },
+        {
+          "photo": "photo4.jpg",
+          "description": "Participants in a charity run organized by the club."
+        }
+      ]
+    }
+  ]
