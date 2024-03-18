@@ -3,52 +3,46 @@ import React from "react";
 
 function What() {
   return (
-    <div className="justify-center bg-white">
-      <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-        <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col grow justify-center px-11 py-16 w-full text-lg text-black bg-pink-400 max-md:px-5 max-md:max-w-full">
-            <div className="font-semibold max-md:max-w-full">LOREM IPSUM</div>
-            <div className="mt-8 text-5xl font-semibold max-md:max-w-full max-md:text-4xl">
+    <div className="bg-white">
+      <div className="flex flex-col md:flex-row gap-5">
+        <div className="flex flex-col w-full md:w-1/2">
+          <div className="flex flex-col justify-center px-6 py-8 md:px-11 md:py-16 text-lg text-black bg-pink-400">
+            <div className="font-semibold">LOREM IPSUM</div>
+            <div className="mt-8 text-4xl md:text-5xl font-semibold">
               What is IMPACT?
             </div>
-            <div className="self-start mt-8 text-4xl whitespace-nowrap">
-              Lorem Ipsum
-            </div>
-            <div className="self-start text-4xl whitespace-nowrap">
-              Is a cute line
-            </div>
-            <div className="mt-8 max-md:max-w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. <br />
-              <br />
-              It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.{" "}
+            <div className="mt-8 text-3xl whitespace-nowrap">Lorem Ipsum</div>
+            <div className="text-3xl whitespace-nowrap">Is a cute line</div>
+            <div className="mt-8">
+              <p className="max-w-full">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
             </div>
             <Button />
           </div>
         </div>
-        <div className="flex flex-col ml-[-20px] w-6/12 max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col grow justify-center px-11 py-16 w-full text-lg text-black bg-yellow-300 max-md:px-5 max-md:max-w-full">
-            <div className="font-semibold max-md:max-w-full">LOREM IPSUM</div>
-            <div className="mt-8 text-5xl font-semibold max-md:max-w-full max-md:text-4xl">
+        <div className="flex flex-col w-full md:w-1/2 mt-5 md:mt-0">
+          <div className="flex flex-col justify-center px-6 py-8 md:px-11 md:py-16 text-lg text-black bg-yellow-300">
+            <div className="font-semibold">LOREM IPSUM</div>
+            <div className="mt-8 text-4xl md:text-5xl font-semibold">
               Lorem Ipsum
             </div>
-            <div className="self-start mt-8 text-4xl whitespace-nowrap">
-              Lorem Ipsum
-            </div>
-            <div className="self-start text-4xl whitespace-nowrap">
-              Is a cute line
-            </div>
-            <div className="mt-8 max-md:max-w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. <br />
-              <br />
-              It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.{" "}
+            <div className="mt-8 text-3xl whitespace-nowrap">Lorem Ipsum</div>
+            <div className="text-3xl whitespace-nowrap">Is a cute line</div>
+            <div className="mt-8">
+              <p className="max-w-full">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
             </div>
             <Button />
           </div>
