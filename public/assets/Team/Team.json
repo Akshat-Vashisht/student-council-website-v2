@@ -3,91 +3,103 @@
     "index": 0,
     "name": "Dr. Suraj Bhoyar",
     "position": "Associate Director",
-    "role":"faculty",
-    "img": "/assets/Team/suraj_sir.jpg"
+    "role": "faculty",
+    "img": "/assets/Team/suraj_sir.jpg",
+    "social": "https://www.linkedin.com/in/surajbhoyar/"
   },
   {
     "index": 1,
     "name": "Atharva Nimbalkar",
     "position": "President",
-    "role":"coreTeam",
-    "img": "/assets/Team/atharva.JPG"
+    "role": "coreTeam",
+    "img": "/assets/Team/atharva.JPG",
+    "social": "https://www.linkedin.com/in/atharva-nimbalkar-225617233/"
   },
   {
     "index": 2,
     "name": "Gurbani Gambhir",
     "position": "Vice President",
-    "role":"coreTeam",
-    "img": "/assets/Team/gurbani.jpg"
+    "role": "coreTeam",
+    "img": "/assets/Team/gurbani.jpg",
+    "social": "https://linkedin.com/in/gurbani-gambhir/"
   },
   {
     "index": 3,
     "name": "Yusra Khan",
     "position": "University General Secretary",
-    "role":"coreTeam",
+    "role": "coreTeam",
     "img": "/assets/Team/yusra.jpg"
   },
   {
     "index": 4,
     "name": "Arya Sameer Paturkar",
     "position": "Joint Secretary",
-    "role":"coreTeam",
-    "img": "/assets/Team/arya.jpeg"
+    "role": "coreTeam",
+    "img": "/assets/Team/arya.jpeg",
+    "social": "https://www.linkedin.com/in/aryapaturkar1/"
   },
   {
     "index": 5,
     "name": "Shivtej Shete",
     "position": "Treasurer",
-    "role":"team",
-    "img": "/assets/Team/shivtej.JPG"
+    "role": "team",
+    "img": "/assets/Team/shivtej.JPG",
+    "social": "https://www.linkedin.com/in/shivtej-shete-7319b0259/"
   },
   {
     "index": 6,
     "name": "Sharvil Maind",
     "position": "Cultural Secretary",
-    "role":"team",
-    "img": "/assets/Team/sharvil.jpg"
+    "role": "team",
+    "img": "/assets/Team/sharvil.jpg",
+    "social": "https://www.linkedin.com/in/sharvilmaind/"
   },
   {
     "index": 7,
     "name": "Bhoumik Rajput",
     "position": "Sports Secretary",
-    "role":"team",
-    "img": "/assets/Team/bhoumik.jpg"
+    "role": "team",
+    "img": "/assets/Team/bhoumik.jpg",
+    "social": "https://www.linkedin.com/in/bhoumik-rajput-60b2221b7/"
   },
   {
     "index": 8,
     "name": "Utkarsha Undre",
     "position": "NCC Secretary",
-    "role":"team",
-    "img": "/assets/Team/utkarsha.jpg"
+    "role": "team",
+    "img": "/assets/Team/utkarsha.jpg",
+    "social": "https://www.linkedin.com/in/utkarsha-undre-6810b3230/"
   },
   {
     "index": 9,
     "name": "Mugdha Jadhav",
     "position": "Wellbeing Secretary",
-    "role":"team",
-    "img": "/assets/Team/mugdha.jpg"
+    "role": "team",
+    "img": "/assets/Team/mugdha.jpg",
+    "social": "https://www.linkedin.com/in/mugdha-jadhav-583206273/"
   },
   {
     "index": 10,
     "name": "Akshat Vashisht",
     "position": "Technology Cluster Secretary",
-    "role":"team",
-    "img": "/assets/Team/akshat.JPG"
+    "role": "team",
+    "img": "/assets/Team/akshat.JPG",
+    "social": "https://www.linkedin.com/in/akshatvashisht/"
   },
   {
     "index": 11,
     "name": "Danika Patil",
     "position": "Media and Outreach Secretary",
-    "role":"team",
-    "img": "/assets/Team/danika.png"
+    "role": "team",
+    "img": "/assets/Team/danika.png",
+    "social": "https://www.linkedin.com/in/danika-patil-88435b251/"
   },
   {
     "index": 12,
     "name": "Swayam Chavan",
     "position": "Magazine/Editorial Secretary",
-    "role":"team",
-    "img": "/assets/Team/swayam.jpg"
+    "role": "team",
+    "img": "/assets/Team/swayam.jpg",
+    "social": "https://www.linkedin.com/in/swayam-chavan-706350273/"
   }
 ]
