@@ -28,7 +28,7 @@ function Navbar() {
             <li>Our team</li>
           </Link>
           <Link href="/">
-            <li>Mental wellbegin</li>
+            <li>Mental wellbeing</li>
           </Link>
         </ul>
         <Image
