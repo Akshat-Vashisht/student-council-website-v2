@@ -4,7 +4,7 @@ import React from "react";
 function What() {
   return (
     <div className="bg-white">
-      <div className="flex flex-col md:flex-row gap-5">
+      <div className="flex flex-col md:flex-row ">
         <div className="flex flex-col w-full md:w-1/2">
           <div className="flex flex-col justify-center px-6 py-8 md:px-11 md:py-16 text-lg text-black bg-pink-400">
             <div className="font-semibold">LOREM IPSUM</div>
@@ -26,7 +26,7 @@ function What() {
             <Button />
           </div>
         </div>
-        <div className="flex flex-col w-full md:w-1/2 mt-5 md:mt-0">
+        <div className="flex flex-col w-full md:w-1/2  md:mt-0">
           <div className="flex flex-col justify-center px-6 py-8 md:px-11 md:py-16 text-lg text-black bg-yellow-300">
             <div className="font-semibold">LOREM IPSUM</div>
             <div className="mt-8 text-4xl md:text-5xl font-semibold">
