@@ -22,6 +22,14 @@ function Hero() {
           alt="Council Image"
           src="/assets/Home/student_council_members.jpg"
         ></Image>
+        {/* Replace with the path to your image */}
+        <Image
+          className="rounded border-white border-3"
+          height={800}
+          width={800}
+          alt="Council Image"
+          src="/assets/Team/student_council_members.jpg"
+        ></Image>
         {/* </div> */}
       </div>
     </section>
