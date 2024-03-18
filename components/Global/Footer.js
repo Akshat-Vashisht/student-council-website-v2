@@ -2,6 +2,7 @@ import React from "react";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io5";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -31,10 +32,13 @@ function Footer() {
               <div className="shrink-0 mt-20 max-w-full h-px bg-white w-[1060px] max-md:mt-10" />
               <div className="flex flex-col items-center mt-12 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
                 <div className="text-white whitespace-nowrap">
-                  <div className="justify-center items-start self-end px-0.5 py-1 max-w-full text-xl ">
-                    <span className="text-white bg-[#004AAD]">Office of</span>
-                    <span className="bg-[#C80F17]">Students Affairs</span>
-                  </div>
+                  <Image
+                  className="mx-auto"
+                  src="/assets/Common/SClogo.png"
+                  width={200}
+                  height={200}
+                  alt="sc logo"
+                  />
                   <div className="text-base">
                     MIT-ADT University, Pune, India{" "}
                   </div>
