@@ -3,7 +3,7 @@
 
 import Card from "@components/Shared/Card";
 import Star from "@components/Shared/Star";
-import TeamJson from "../../public/assets/Team/Team.json"
+import TeamJson from "../../../public/assets/Team/Team.json"
 // const presidentData = {
 //   name: "Sankalp",
 //   position: "president",

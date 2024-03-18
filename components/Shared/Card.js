@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Link from "next/link";
 import { useState } from "react";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa6";
@@ -11,7 +11,7 @@ const Card = ({ data, useAs }) => {
 
   console.log(data);
   return (
-    <>
+    <div >
       {useAs === "team" ? (
         <div
           onMouseEnter={() => setShowOnHover(true)}
@@ -82,8 +82,7 @@ const Card = ({ data, useAs }) => {
         </div>
       ) : (
         <div
-          onMouseEnter={() => setShowOnHover(true)}
-          onMouseLeave={() => setShowOnHover(false)}
+
           style={{
             background: `url(${data.club_detail.thumbnail_photo})no-repeat center`,
             backgroundSize: "cover",
@@ -92,8 +91,7 @@ const Card = ({ data, useAs }) => {
         >
           
           <div onClick={()=>router.push(
-           "/contact",
-          {  query: { data: JSON.stringify(data) }}
+           `/clubs/${data.uuid}`
           
           )} className="cursor-pointer absolute bottom-0 w-full bg-[#A7C643] flex items-center justify-center h-[3rem]">
             <p className="text-[#083133] font-semibold p-3 text-center">
@@ -109,7 +107,7 @@ const Card = ({ data, useAs }) => {
        
         </div>
       )}
-    </>
+    </div>
   );
 };
 

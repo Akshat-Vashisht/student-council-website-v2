@@ -8,7 +8,7 @@ const ClubsSection = ({ tags }) => {
     const [activeTab, setActiveTab] = useState("")
   return (
     <div className="">
-      <div className="flex flex-wrap gap-x-3 py-14 mx-[3rem]">
+      <div className="flex flex-wrap gap-3 py-14 mx-[3rem]">
         {tags.map((tag) => (
           <span
             key={tag}
@@ -21,8 +21,8 @@ const ClubsSection = ({ tags }) => {
       </div>
             
       <div className="flex flex-wrap gap-10 justify-center items-center p-10">
-        {Clubs.map(club=>(
-            <Card data={club} useAs="clubs"/>
+        {Clubs.map((club)=>(
+            <Card key={club.uuid} data={club} useAs="clubs"/>
         ))}
       </div>
     </div>
