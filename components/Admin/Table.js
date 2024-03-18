@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { CiSearch } from "react-icons/ci";
 
 export default function Table() {
@@ -58,8 +58,13 @@ export default function Table() {
   return (
     <div>
       <div className="w-full border-b border-[#2b2821] text-[#6c6e6e] p-2">
-        <CiSearch className="absolute text-xl"/>
-        <input type="text" name="search" placeholder="Search a Item" className="bg-[#1D1B16] pl-8 text-[#858686] focus:outline-none  placeholder:text-[#6c6e6e]" />
+        <CiSearch className="absolute text-xl" />
+        <input
+          type="text"
+          name="search"
+          placeholder="Search a Item"
+          className="bg-[#1D1B16] pl-8 text-[#858686] focus:outline-none  placeholder:text-[#6c6e6e]"
+        />
       </div>
       <table className=" w-full overflow-x-scroll">
         <thead>
@@ -75,9 +80,12 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          {data.map((item) => {
+          {data.map((item, index) => {
             return (
-              <tr className="border-b border-[#2b2821] text-[#818585]">
+              <tr
+                key={index}
+                className="border-b border-[#2b2821] text-[#818585]"
+              >
                 <td className="p-2">{item.title}</td>
                 <td className="p-2">{item.shortDescription}</td>
                 <td className="p-2">{item.longDescription}</td>

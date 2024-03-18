@@ -3,7 +3,7 @@
 
 import Card from "@components/Shared/Card";
 import Star from "@components/Shared/Star";
-import TeamJson from "../../../public/assets/Team/Team.json"
+import TeamJson from "../../../public/assets/Team/Team.json";
 // const presidentData = {
 //   name: "Sankalp",
 //   position: "president",
@@ -59,9 +59,11 @@ const page = async () => {
         </h1>
 
         <div className="flex flex-wrap gap-10 justify-evenly ">
-          {TeamJson.filter(member=>member.role==="coreTeam").map((data) => {
-            return <Card useAs={"team"} data={data} />;
-          })}
+          {TeamJson.filter((member) => member.role === "coreTeam").map(
+            (data, index) => {
+              return <Card key={index} useAs={"team"} data={data} />;
+            }
+          )}
         </div>
       </div>
 
@@ -72,9 +74,11 @@ const page = async () => {
         </h1>
 
         <div className="flex flex-wrap gap-10 justify-evenly">
-          {TeamJson.filter(member=>member.role==="team").map((data) => {
-            return <Card useAs={"team"} data={data} />;
-          })}
+          {TeamJson.filter((member) => member.role === "team").map(
+            (data, index) => {
+              return <Card key={index} useAs={"team"} data={data} />;
+            }
+          )}
         </div>
       </div>
     </div>

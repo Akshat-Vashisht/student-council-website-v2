@@ -21,11 +21,14 @@ export default function Header() {
   return (
     <div className="p-3 flex">
       <SignOutButton className="bg-[#25231d]  rounded-sm  px-3">
-            Sign out
+        Sign out
       </SignOutButton>
       <div className="flex gap-6 justify-end flex-grow">
-        {options.map((option) => (
-          <span className="flex items-center gap-1 text-sm hover:bg-[#25231d] p-1 px-3 rounded-md cursor-pointer">
+        {options.map((option, index) => (
+          <span
+            key={index}
+            className="flex items-center gap-1 text-sm hover:bg-[#25231d] p-1 px-3 rounded-md cursor-pointer"
+          >
             {option.icon}
             {option.name}
           </span>

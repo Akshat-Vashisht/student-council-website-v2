@@ -6,7 +6,7 @@ function Hero() {
         <div class="lg:flex-grow md:w-1/4 lg:pr-50 md:pr-40 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 class="title-font sm:text-15xl text-8xl mb-4 font-medium text-gray-900 font-sans-pro">
             {" "}
-            LET'S <div>BE THE</div>
+            LET&apos;S <div>BE THE</div>
             CHANGE
           </h1>
           <p class="text-gray-700 mb-4">
