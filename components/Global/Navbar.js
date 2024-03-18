@@ -13,8 +13,8 @@ function Navbar() {
         <Image
           src="/assets/Common/SClogo.png"
           className="object-contain"
-          width={40}
-          height={40}
+          width={150}
+          height={150}
           alt="Student Council Logo"
         ></Image>
         <ul className={`flex justify-evenly w-full items-center mdM:flex-col mdM:absolute bg-[#FFEDBF] mdM:left-0 mdM:gap-y-10 mdM:z-50 mdM:top-[5rem] mdM:rounded-xl mdM:shadow-md transition-all duration-200 ease mdM:overflow-hidden ${show? "mdM:h-[20rem] mdM:py-[2rem]": "mdM:h-[0rem] mdM:p-0 "}`}>
