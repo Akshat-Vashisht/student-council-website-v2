@@ -1,41 +1,79 @@
-function Vission() {
+"use client";
+import React, { useState } from "react";
+
+const Carousel = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      header: "Vision",
+      content: `To create a vibrant and cohesive student community at MIT-ADT University, where every individual is empowered to excel academically, professionally, and personally`,
+    },
+    {
+      header: "Mission",
+      content: `The MIT-IMPACT Student Council is committed to fostering an environment of inspiration, achievement, and togetherness by:
+      1.⁠ ⁠Providing opportunities for intellectual growth and creative exploration.
+      2.⁠ ⁠Supporting student endeavors to achieve academic excellence and personal development.
+      3.⁠ ⁠Cultivating a sense of belonging and inclusivity through diverse and engaging initiatives.
+      4.⁠ ⁠Facilitating collaboration and synergy among students, faculty, and staff to enhance the overall university experience.
+      5.⁠ ⁠To create a supportive environment that empowers students to excel academically, socially and personally.`,
+    },
+    {
+      header: "Objective",
+      content:
+        "The MIT-IMPACT Student council aims to represent and unite the MIT-ADT University community by advocating for student needs, fostering inclusivity, and organizing events for personal and leadership development. We facilitate dialogue between students, faculty, and administration to address concerns and enact positive change. Empowering individuals to engage in decision-making, we strive to enhance the university experience for all.",
+    },
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
-    <div>
-      <div className="flex flex-col justify-center p-10 bg-amber-100">
-        <div className="flex flex-col items-center px-16 pt-3.5 pb-20 w-full bg-sky-300 rounded-[33px] max-md:px-5 max-md:max-w-full">
-          <div className="flex flex-col mb-1.5 w-full max-w-[1143px] max-md:max-w-full">
-            <div className="max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                <div className="flex flex-col w-[71%] max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col grow mt-12 text-2xl font-bold text-neutral-700 max-md:mt-10 max-md:max-w-full">
-                    <div className="text-5xl font-black text-justify uppercase leading-[92.71px] text-teal-950 tracking-[4.75px] max-md:max-w-full max-md:text-4xl">
-                      VISION
-                    </div>
-                    <div className="mt-11 max-md:mt-10 max-md:max-w-full">
-                      Lorem ipsum dolor sit amet consectetur. Enim dolor
-                      accumsan aliquet magna ullamcorper lorem accumsan ipsum.
-                      Consectetur tempus pellentesque nulla egestas elementum
-                      mattis ut. Tellus quis faucibus duis pellentesque metus
-                      scelerisque nisi rhoncus fames.{" "}
-                    </div>
-                    <div className="mt-7 max-md:max-w-full">
-                      Lorem ipsum dolor sit amet consectetur. Enim dolor
-                      accumsan aliquet magna ullamcorper lorem accumsan ipsum.
-                      Consectetur tempus pellentesque nulla egestas elementum
-                      mattis ut.{" "}
-                    </div>
+    <div className="relative w-full p-10 bg-[#FFECC1]">
+      <div className="bg-[#79E0E6] sm:h-[350px] md:h-[450px] lg:h-[550px]  mx-auto  rounded shadow-md text-black">
+        <div className="flex relative">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`w-full ${
+                index === currentSlide ? "block" : "hidden"
+              } transition-opacity duration-500`}
+            >
+              <div className={`relative h-64 mt-2 md:h-96 py-4 lg:h-120`}>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black w-full md:max-w-2xl mx-auto">
+                  <div className="text-center mt-2 py-4">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                      {slide.header}
+                    </h2>
+                    <p className="overflow-hidden text-sm md:text-base lg:text-lg">
+                      {slide.content}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <button className="justify-center self-start px-14 py-6 mt-12 text-xl font-semibold tracking-wide leading-6 text-black whitespace-nowrap bg-white rounded-[39.459px] max-md:px-5 max-md:mt-10">
-              LEARN MORE
-            </button>
-          </div>
+          ))}
+          <button
+            className="absolute top-1/2 left-0 transform -translate-y-1/2 px-4 py-2 rounded-[50px] bg-transparent text-gray-800 border border-gray-800"
+            onClick={prevSlide}
+          >
+            &larr;
+          </button>
+          <button
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 px-4 py-2 rounded-[50px] bg-transparent text-gray-800 border border-gray-800"
+            onClick={nextSlide}
+          >
+            &rarr;
+          </button>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Vission;
+export default Carousel;
