@@ -20,7 +20,7 @@ function Hero() {
           height={800}
           width={800}
           alt="Council Image"
-          src="/assets/Home/student_council_members.jpg"
+          src="/assets/Team/student_council_members.jpg"
         ></Image>
         {/* </div> */}
       </div>
