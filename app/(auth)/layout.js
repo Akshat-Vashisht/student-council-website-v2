@@ -8,13 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider
-    appearance={{
-      elements: {
-        footer: "hidden",
-      },
-    }}
-    >
+    <ClerkProvider>
       <html lang="en">
         <body>{children}</body>
       </html>
