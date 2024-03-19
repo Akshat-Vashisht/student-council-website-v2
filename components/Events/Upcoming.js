@@ -44,7 +44,7 @@ function Upcoming() {
 
   return (
     <div className="bg-[#FFECC1] min-h-screen flex flex-col justify-center items-center py-10  relative px-20">
-      <h1 className=" text-4xl smM:text-8xl smM:font-bold font-bold uppercase text-[#083133] mb-8">
+      <h1 className="text-4xl smM:text-2xl smM:font-bold font-bold uppercase text-[#083133] mb-8">
         Upcoming Events
       </h1>
 
