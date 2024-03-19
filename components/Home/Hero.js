@@ -4,10 +4,10 @@ import Exclaim from "@components/Shared/Exclaim";
 import Button from "@components/Shared/Button";
 function Hero() {
   return (
-    <section class="text-gray-600 bg-[#A7C643] body-font overflow-hidden">
-      <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center relative">
-        <div class="lg:flex-grow md:w-1/4 lg:pr-50 md:pr-40 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 class="title-font sm:text-15xl text-8xl mb-4 font-medium text-gray-900 font-sans-pro z-20 relative">
+    <section className="h-[90vh] mdM:h-fit bg-[#A7C643] flex mdM:flex-col gap-4 justify-between mdM:justify-center mdM:gap-8 items-center p-10 overflow-hidden">
+      <div className="container mx-auto flex px-5 md:flex-row flex-col items-center relative">
+        <div className="lg:flex-grow md:w-1/4  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="uppercase  text-4xl mdM:text-[10vw] smM:text-[2vw] w-[20rem] mdM:w-full mdM:text-center font-bold relative">
             {" "}
             <Star
               color={"#FCDE42"}
@@ -28,14 +28,22 @@ function Hero() {
           </div>
         </div>
         {/* <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"> */}
-
-        <Image
+        <div className=" flex items-center border-[6px] mdM:w-full border-white rounded-[1.1rem]">
+          <Image
+            alt="hero-img"
+            className="rounded-xl block mdM:w-full mdM:h-auto"
+            src="/assets/Team/student_council_members.jpg"
+            width={600}
+            height={600}
+          />
+        </div>
+        {/* <Image
           className="rounded border-white border-3"
           height={800}
           width={800}
           alt="Council Image"
-          src="/assets/Team/student_council_members.jpg"
-        ></Image>
+
+        ></Image> */}
         {/* </div> */}
         <Star
           color={"#79E0E6"}
