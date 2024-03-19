@@ -1,8 +1,23 @@
+'use client'
 import Image from "next/image";
 import Star from "@components/Shared/Star";
 import Exclaim from "@components/Shared/Exclaim";
 import Button from "@components/Shared/Button";
+import { useEffect, useState } from "react";
 function Hero() {
+  const [isPhone, setIsPhone] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPhone(window.innerWidth <= 654); 
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
  
       
@@ -10,9 +25,9 @@ function Hero() {
         <div className="space-y-4 mdM:flex mdM:flex-col mdM:justify-center mdM:items-center">
           <h1 className="uppercase relative text-7xl w-[20rem] mdM:w-full mdM:text-center mdM:text-[10vw] font-bold ">
             <Star
-              size={200}
+              size={isPhone ? 130 : 220}
               color={"#FCDE42"}
-              position={"-top-[7rem] right-10 mdM:left-0 "}
+              position={"-top-[7rem] right-10 mdM:left-3 mdM:-top-[5rem] "}
             />
             <span className="relative">
             LET&apos;S <span className="block mdM:inline">BE THE </span>
@@ -37,8 +52,8 @@ function Hero() {
         </div>
         <Star
             color={"#79E0E6"}
-            size={220}
-            position={"-bottom-[2rem] -right-[6rem] smM:hidden"}
+            size={isPhone ? 100 : 220}
+            position={"-bottom-[2rem] -right-[2rem]"}
           />
       </div>
   );
