@@ -55,20 +55,6 @@ function Hero() {
           position={"-bottom-[2rem] -right-[2rem]"}
         />
       </div>
-      <div className=" flex items-center border-[6px] mdM:w-full border-white rounded-[1.1rem]">
-        <Image
-          alt="hero-img"
-          className="rounded-xl block mdM:w-full mdM:h-auto"
-          src="/assets/Team/student_council_members.jpg"
-          width={700}
-          height={700}
-        />
-      </div>
-      <Star
-        color={"#79E0E6"}
-        size={220}
-        position={"-bottom-[2rem] -right-[6rem] smM:hidden"}
-      />
     </div>
   );
 }
