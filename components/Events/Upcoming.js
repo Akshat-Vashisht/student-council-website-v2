@@ -43,25 +43,23 @@ function Upcoming() {
   ];
 
   return (
-    <div className="bg-[#FFECC1] min-h-screen flex flex-col justify-center items-center py-20 relative px-20">
-      <h1 className="text-5xl font-bold uppercase text-[#083133] mb-8">
+    <div className="bg-[#FFECC1] min-h-screen flex flex-col justify-center items-center py-10  relative px-20">
+      <h1 className=" text-4xl smM:text-8xl smM:font-bold font-bold uppercase text-[#083133] mb-8">
         Upcoming Events
       </h1>
 
       {events.map((event, index) => (
         <div
           key={event.id}
-          className={`flex gap-5 items-end pr-9 pb-16 mt-24 text-black ${event.color} rounded-[36px] max-md:flex-wrap max-md:pr-5 max-md:mt-10`}
+          className={`flex smM:flex-col smM:w-80 gap-5 items-end pb-16 mt-24 text-black ${event.color} rounded-[36px] max-md:flex-wrap md:pr-5 max-md:mt-10`}
         >
           <div className="flex  overflow-hidden relative flex-col px-12 pt-4 pb-20 mb-auto text-5xl font-extrabold text-center whitespace-nowrap aspect-[1.03] fill-yellow-300  max-md:text-4xl">
             <RectangleIcon />
-            <div className="relative self-center max-md:text-4xl">
-              {event.date}
-            </div>
-            <div className="relative mt-4 max-md:text-4xl">{event.month}</div>
+            <div className="relative self-center md:text-4xl">{event.date}</div>
+            <div className="relative mt-4 md:text-4xl">{event.month}</div>
           </div>
 
-          <div className="flex flex-col grow shrink-0 mt-7 basis-0 w-fit max-md:max-w-full">
+          <div className="flex flex-col grow p-2 shrink-0 mt-7 basis-0 w-fit max-md:max-w-full">
             <div className="text-5xl font-bold leading-[62.23px] max-md:max-w-full max-md:text-4xl">
               {event.title}
             </div>
