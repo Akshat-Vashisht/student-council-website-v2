@@ -7,7 +7,7 @@ function Hero() {
     <section className="h-[90vh] mdM:h-fit bg-[#A7C643] flex mdM:flex-col gap-4 justify-between mdM:justify-center mdM:gap-8 items-center p-10 overflow-hidden">
       <div className="container mx-auto flex px-5 md:flex-row flex-col items-center relative">
         <div className="lg:flex-grow md:w-1/4  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="uppercase  text-4xl mdM:text-[10vw] smM:text-[2vw] w-[20rem] mdM:w-full mdM:text-center font-bold relative">
+          <h1 className="uppercase  text-7xl mdM:text-[10vw] smM:text-[2vw] w-[20rem] mdM:w-full mdM:text-center font-bold relative">
             {" "}
             <Star
               color={"#FCDE42"}
