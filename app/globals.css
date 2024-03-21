@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -17,8 +17,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-*,html{
-  font-family: 'Source Sans 3';
+*,
+html {
+  font-family: "Source Sans 3";
 }
 
 body {
@@ -35,4 +36,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.message p {
+  word-break: break-word;
 }

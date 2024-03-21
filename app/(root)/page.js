@@ -6,7 +6,7 @@ import What from "@components/Home/What";
 
 function Home() {
   return (
-    <div>
+    <div className="relative overflow-hidden">
       <Hero />
       <Scroll />
       <What />

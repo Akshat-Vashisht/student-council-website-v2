@@ -7,9 +7,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 function Navbar() {
   const [show, setShow] = useState(false)
   return (
-    <div className="bg-[#A7C643] p-4 px-14 mdM:relative">
-      <RxHamburgerMenu onClick={()=>setShow(prev=>!prev)} className="text-2xl text-[#FFEDBF] cursor-pointer absolute top-10 right-5 hidden mdM:block"/>
-      <div className="bg-[#FFEDBF] flex justify-between p-3 px-10 rounded-full text-black font-semibold uppercase mdM:relative">
+    <div className="bg-[#A7C643] p-4 px-14 mdM:relative mdM:flex mdM:items-center mdM:justify-between mdM:px-5 mdM:gap-x-2">
+      <div className="bg-[#FFEDBF] flex justify-between p-3 px-10 rounded-full text-black font-semibold uppercase mdM:relative mdM:w-full">
         <Image
           src="/assets/Common/SClogo.png"
           className="object-contain"
@@ -21,23 +20,26 @@ function Navbar() {
           <Link href="/">
             <li>Home</li>
           </Link>
-          <Link href="/clubs">
-            <li>Clubs</li>
+          <Link href="/events">
+            <li>Events</li>
           </Link>
           <Link href="/team">
             <li>Our team</li>
           </Link>
-          <Link href="/">
+          <Link href="/mental-wellbeing">
             <li>Mental wellbeing</li>
           </Link>
         </ul>
         <Image
+        className="mdM:hidden"
           src="/assets/Common/MITlogo.png"
           width={100}
           height={60}
           alt="Student Council Logo"
         ></Image>
+
       </div>
+      <RxHamburgerMenu onClick={()=>setShow(prev=>!prev)} className="text-2xl text-[#FFEDBF] cursor-pointer hidden mdM:block"/>
     </div>
   );
 }
