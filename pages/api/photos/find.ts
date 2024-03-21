@@ -5,22 +5,28 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const {img_desc} = req.body;
     
     try {
-      const uri = process.env.DB_URI;
-      const dbName = "studentcouncil"; //Database name
-      const photoCollection = "photos"; // Replace with your database name
-  
-      const client = await MongoClient.connect(uri);
-      const db = client.db(dbName);
-      console.log("Successfully established connection with MongoDB");
+      if(req.method === "GET"){
+        const uri = process.env.DB_URI;
+        const dbName = "studentcouncil"; //Database name
+        const photoCollection = "photos"; // Replace with your database name
+    
+        const client = await MongoClient.connect(uri);
+        const db = client.db(dbName);
+        console.log("Successfully established connection with MongoDB");
 
-      const photos = db.collection(photoCollection);
-      const response = await photos.findOne({img_desc});
+        const photos = db.collection(photoCollection);
+        const response = await photos.findOne({img_desc});
 
-      if(response === null){
-        res.status(404).json({ message: "No Image Found" });
-      }      
-      else{
-      res.status(200).json({ img_url: response.img_url });
+        if(response === null){
+          res.status(404).json({ message: "No Image Found" });
+        }      
+        else{
+        res.status(200).json({ img_url: response.img_url });
+      }
+    }
+    
+    else{
+      res.status(405).json({ message: "Method Not Allowed" });
     }
   }
     catch(error){
