@@ -32,7 +32,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             console.error('Error during form parsing:', err);
             return res.status(500).json({ message: 'Internal server error during form parsing' });
         }
-        const { name, desc, long_desc, venue, start, end } = fields;
+        const { name, desc, long_desc, venue, start, end, img_desc} = fields;
         const img = files.image as formidable.File;
         
         try {
@@ -42,9 +42,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             const events = db.collection(eventCollection);
             const photos = db.collection(photoCollection);
             const response = await cloudinary.v2.uploader.upload(img.path, { public_id: 'events/' + img.name });
-            await events.insertOne({ name, desc, long_desc, venue, start, end, img_desc: img.name });
-            await photos.insertOne({ img_desc: img.name, img_url: response.url });
-            res.status(200).json({ message: "Updated Successfully", url: response.url });
+            await events.insertOne({ name, desc, long_desc, venue, start, end, img_desc: img_desc, img_url: response.url});
+            await photos.insertOne({ img_desc: img_desc, img_url: response.url });
+            res.status(200).json({ message: "Updated Successfully", img_desc: img_desc, img_url: response.url });
         }
     
         catch (error) {

@@ -27,7 +27,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             console.error('Error during form parsing:', err);
             return res.status(500).json({ message: 'Internal server error during form parsing' });
         }
-        const img = files.image as formidable.File;
+        const img_desc = fields.img_desc;
+        const img = files.img as formidable.File;
         
         try {
             const client = await MongoClient.connect(uri);
@@ -35,8 +36,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             console.log("Successfully established connection with MongoDB");
             const photos = db.collection(photoCollection);
             const response = await cloudinary.v2.uploader.upload(img.path, { public_id: 'events/' + img.name });
-            await photos.insertOne({ img_desc: img.name, img_url: response.url });
-            return res.status(200).json({ message: "Updated Successfully", url: response.url });
+            await photos.insertOne({ img_desc, img_url: response.url });
+            return res.status(200).json({ message: "Updated Successfully", img_desc: img_desc, url: response.url });
         }
     
         catch (error) {
