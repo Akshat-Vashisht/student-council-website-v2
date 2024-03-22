@@ -12,6 +12,7 @@
     "@ant-design/icons": "^5.3.1",
     "@clerk/nextjs": "^4.29.9",
     "@material-tailwind/react": "^2.1.9",
+    "@vercel/analytics": "^1.2.2",
     "antd": "^5.15.2",
     "cloudinary": "^1.21.0",
     "dotenv": "^16.4.5",

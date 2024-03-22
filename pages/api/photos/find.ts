@@ -3,13 +3,13 @@ import { MongoClient } from 'mongodb';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
     const {img_desc} = req.body;
+    const uri = process.env.DB_URI;
+    const dbName = "studentcouncil"; //Database name
+    const photoCollection = "photos"; // Replace with your database name
     
     try {
-      if(req.method === "GET"){
-        const uri = process.env.DB_URI;
-        const dbName = "studentcouncil"; //Database name
-        const photoCollection = "photos"; // Replace with your database name
-    
+      if(req.method === "GET"){  
+        if(uri !== undefined){
         const client = await MongoClient.connect(uri);
         const db = client.db(dbName);
         console.log("Successfully established connection with MongoDB");
@@ -24,7 +24,12 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         res.status(200).json({ img_url: response.img_url });
       }
     }
-    
+
+    else{
+      res.status(500).json({ message: "Internal Server Error" });
+      console.log("MongoDB URI is undefined");
+    }
+      }  
     else{
       res.status(405).json({ message: "Method Not Allowed" });
     }

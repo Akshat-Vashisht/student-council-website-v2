@@ -31,15 +31,25 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         const img = files.img as formidable.File;
         
         try {
-            const client = await MongoClient.connect(uri);
-            const db = client.db(dbName);
-            console.log("Successfully established connection with MongoDB");
-            const photos = db.collection(photoCollection);
-            const response = await cloudinary.v2.uploader.upload(img.path, { public_id: 'events/' + img.name });
-            await photos.insertOne({ img_desc, img_url: response.url });
-            return res.status(200).json({ message: "Updated Successfully", img_desc: img_desc, url: response.url });
+            if(req.method === "POST"){
+                if(uri !== undefined){
+                const client = await MongoClient.connect(uri);
+                const db = client.db(dbName);
+                console.log("Successfully established connection with MongoDB");
+                const photos = db.collection(photoCollection);
+                const response = await cloudinary.v2.uploader.upload(img.path, { public_id: 'events/' + img.name });
+                await photos.insertOne({ img_desc, img_url: response.url });
+                return res.status(200).json({ message: "Updated Successfully", img_desc: img_desc, url: response.url });
+                }
+                else{
+                    return res.status(500).json({ message: "Internal Server Error" });
+                    console.log("MongoDB URI is undefined");
+                }
+            }
+        else{
+            return res.status(405).json({ message: "Method Not Allowed" });
         }
-    
+    }
         catch (error) {
             console.error('Error:', error);
             return res.status(500).json({ message: 'Internal server error' });
