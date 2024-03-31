@@ -4,25 +4,6 @@
 import Card from "@components/Shared/Card";
 import Star from "@components/Shared/Star";
 import TeamJson from "../../../public/assets/Team/Team.json";
-// const presidentData = {
-//   name: "Sankalp",
-//   position: "president",
-//   role: "president",
-//   img: "/assets/person1.jpeg",
-// };
-
-// const coreTeamData = Array(4).fill({
-//   name: "Sankalp",
-//   position: "member",
-//   role: "coreTeam",
-//   img: "/assets/person1.jpeg",
-// });
-// const teamData = Array(10).fill({
-//   name: "Sankalp",
-//   position: "member",
-//   role: "team",
-//   img: "/assets/person1.jpeg",
-// });
 const page = async () => {
   // const data = await fetchEvents();
   return (
