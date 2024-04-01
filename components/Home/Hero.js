@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Star from "@components/Shared/Star";
+import Link from "next/link";
 import Exclaim from "@components/Shared/Exclaim";
 import Button from "@components/Shared/Button";
 import { useEffect, useState } from "react";
@@ -34,10 +35,10 @@ function Hero() {
             </span>
           </h1>
           <h3 className="w-3/4 text-xl text-[#083133] font-black">
-            Lorem ipsum dolor sit. Lorem, ipsum dolor.
+            Take a leap with MIT ADT STUDENT COUNCIL
           </h3>
           <button className="text-[#A7C643] bg-black py-1 w-[15rem] rounded-full uppercase">
-            Book Now!
+            <Link href="/team">Meet the team</Link>
           </button>
         </div>
         <div className=" flex items-center border-[6px] mdM:w-full border-white rounded-[1.1rem]">

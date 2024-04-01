@@ -18,7 +18,7 @@ function Impact() {
         </div>
         <div className="w-full md:w-1/3">
           <div className="flex flex-col items-center px-8 md:px-20 py-8 md:py-16 w-full font-bold text-justify bg-[#F6A342] rounded-xl text-teal-950">
-            <div className="text-4xl md:text-9xl">IM</div>
+            <div className="text-4xl md:text-9xl">CT</div>
             <div className="text-lg md:text-2xl">Cultivating Togetherness</div>
           </div>
         </div>

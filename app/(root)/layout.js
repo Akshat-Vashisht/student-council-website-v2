@@ -3,7 +3,6 @@ import { Analytics } from '@vercel/analytics/react';
 import "../globals.css";
 import Navbar from "@components/Global/Navbar";
 import Footer from "@components/Global/Footer";
-import { Analytics } from '@vercel/analytics/react';
 
 
 const inter = Inter({ subsets: ["latin"] });

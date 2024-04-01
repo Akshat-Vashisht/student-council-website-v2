@@ -24,12 +24,9 @@ const Card = ({ data, useAs }) => {
         >
           {data.role === "faculty" ? (
             <div className="absolute bottom-0 w-full bg-[#79E0E6] flex items-center justify-center h-[3rem]">
-              <p className="text-[#083133] font-semibold p-3 text-center">
-                <span className="uppercase text-xs font-bold">
-                  {" "}
-                  {data.name}{" "}
-                </span>{" "}
-                <br /> {data.position}
+              <p className="text-[#083133] font-semibold p-3 text-center whitespace-nowrap">
+                <span className="text-xl"> {data.name} </span> <br />{" "}
+                {data.position}
               </p>
               <span
                 className={`bg-[#79E0E6] absolute w-full h-full flex justify-center items-center transition-transform duration-200 ${
@@ -45,12 +42,9 @@ const Card = ({ data, useAs }) => {
             </div>
           ) : data.role === "coreTeam" ? (
             <div className="absolute bottom-0 w-full bg-[#A7C643] flex items-center justify-center h-[3rem]">
-              <p className="text-[#083133] font-semibold p-3 text-center">
-                <span className="uppercase text-xs font-bold">
-                  {" "}
-                  {data.name}{" "}
-                </span>{" "}
-                <br /> {data.position}
+              <p className="text-[#083133] font-semibold p-3 text-center whitespace-nowrap">
+                <span className="text-xl"> {data.name} </span> <br />{" "}
+                {data.position}
               </p>
               <span
                 className={`bg-[#A7C643] absolute w-full h-full flex justify-center items-center transition-transform duration-200 ${
@@ -67,7 +61,7 @@ const Card = ({ data, useAs }) => {
           ) : data.role === "team" ? (
             <div className="absolute bottom-0 w-full bg-[#F6A342]  flex items-center justify-center h-[3rem]">
               <p className="text-[#083133] font-semibold p-3 text-center whitespace-nowrap">
-                <span className="uppercase"> {data.name} </span> <br />{" "}
+                <span className="text-xl"> {data.name} </span> <br />{" "}
                 {data.position}
               </p>
               <span
