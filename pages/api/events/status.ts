@@ -5,7 +5,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const uri = process.env.DB_URI;
     const dbName = "studentcouncil"; //Database name
     const eventCollection = "events"; // Replace with your database name
+    const currentDate = new Date().toISOString();;
     
+
     try {
     if(req.method === "GET"){  
       if(uri !== undefined){
@@ -14,8 +16,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         console.log("Successfully established connection with MongoDB");
 
         const events = db.collection(eventCollection); 
-        const collection = await events.find().toArray();
-        res.status(200).json({events: collection});
+        const pastEvents = await events.find({start: {$lt: currentDate}}).toArray();
+        const upcomingEvents = await events.find({start: {$gt: currentDate}}).toArray();
+
+        res.status(200).json({previous: pastEvents, upcoming: upcomingEvents});
     }
     else{
       res.status(500).json({ message: "Internal Server Error" });
