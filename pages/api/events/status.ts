@@ -19,7 +19,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         const pastEvents = await events.find({start: {$lt: currentDate}}).toArray();
         const upcomingEvents = await events.find({start: {$gt: currentDate}}).toArray();
 
-        res.status(200).json({previous: pastEvents, upcoming: upcomingEvents});
+        res.status(200).json({past: pastEvents, upcoming: upcomingEvents});
     }
     else{
       res.status(500).json({ message: "Internal Server Error" });
