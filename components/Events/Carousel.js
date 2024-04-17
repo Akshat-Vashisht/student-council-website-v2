@@ -5,7 +5,7 @@ import axios from "axios";
 import Image from "next/image";
 
 const contentStyle = {
-  height: "10vh", // Make the height responsive based on the viewport height
+  height: "100vh", // Make the height responsive based on the viewport height
   color: "#fff",
   textAlign: "center",
   background: "#364d79",
@@ -56,7 +56,7 @@ const CarouselComponent = () => {
               src={event.img_url}
               alt={event.img_desc}
               width={10000}
-              height={10}
+              height={200}
               layout="intrinsic"
               quality={100}
               style={{ opacity: 0.5 }} // Optional: Add opacity to image for better text readability
