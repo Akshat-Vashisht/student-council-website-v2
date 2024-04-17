@@ -18,9 +18,7 @@ function Upcoming() {
   useEffect(() => {
     async function fetchEvents() {
       try {
-        const response = await axios.get(
-          "http://localhost:3000/api/events/status"
-        );
+        const response = await axios.get(`${process.env.DEPLOYMENT_URL}/api/events/status`);
         setEvents(response.data.upcoming); // Assuming your endpoint directly gives an array of events
       } catch (error) {
         console.error("Failed to fetch events:", error);
