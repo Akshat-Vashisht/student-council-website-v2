@@ -81,7 +81,7 @@ const PreviousEvents = () => {
   }
 
   return (
-    <div className="flex flex-col px-10 py-20 bg-amber-100 max-md:px-5">
+    <div className="flex flex-col px-10 py-20 bg-[#FFECC1] max-md:px-5">
       <div className="self-center mt-24 text-6xl font-black text-center text-black uppercase leading-[81.28px] tracking-[4.16px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         Previous Events
       </div>
