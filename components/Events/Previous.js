@@ -22,7 +22,7 @@ const EventCard = ({
         <div className="text-xl text-black">{month}</div>
       </div>
       {/* Event Image */}
-      <div className="flex justify-center items-center mb-6 bg-white w-[120px] h-[120px] md:w-auto md:h-auto">
+      <div className="flex justify-center items-center mb-6 bg-white w-auto h-auto smM:w-auto smM:h-auto mdM:w-auto mdM:h-auto">
         <img
           loading="lazy"
           src={imageName}
@@ -32,7 +32,7 @@ const EventCard = ({
       </div>
       {/* Event Title, Timing and Description */}
       <div className="flex flex-col flex-grow text-2xl text-black md:ml-6 text-left">
-        <div className="text-6xl font-extrabold mb-2 max-md:text-4xl">
+        <div className="text-6xl smM:text-4xl font-extrabold mb-2 max-md:text-4xl">
           {eventTitle}
         </div>
         <div className="mb-2">{timingAndVenue}</div>
@@ -82,7 +82,7 @@ const PreviousEvents = () => {
 
   return (
     <div className="flex flex-col px-10 py-20 bg-[#FFECC1] max-md:px-5">
-      <div className="self-center mt-24 text-6xl font-black text-center text-black uppercase leading-[81.28px] tracking-[4.16px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+      <div className="self-center mt-12 text-6xl smM:text-4xl font-black text-center text-black uppercase leading-[81.28px] tracking-[4.16px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         Previous Events
       </div>
       {events.map((event, idx) => (
