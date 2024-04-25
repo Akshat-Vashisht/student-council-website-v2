@@ -12,7 +12,7 @@ const RectangleIcon = () => (
   />
 );
 
-function Upcoming() {
+function UpcomingEvents() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
@@ -65,4 +65,4 @@ function Upcoming() {
   );
 }
 
-export default memo(Upcoming);
+export default memo(UpcomingEvents);
