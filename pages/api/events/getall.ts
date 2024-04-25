@@ -4,6 +4,7 @@ import Cors from "cors";
 
 const cors = Cors({
   methods: "GET",
+  origin: "*",
 });
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
