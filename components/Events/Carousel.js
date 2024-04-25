@@ -32,7 +32,9 @@ const CarouselComponent = () => {
 
   async function fetchAllEvents() {
     try {
-      const res = await axios.get(`${process.env.DEPLOYMENT_URL}/api/events/getall`);
+      const res = await axios.get(
+        `${process.env.NEXT_PUBLIC_DEPLOYMENT_URL}/api/events/getall`
+      );
       setEvents(res.data.events);
     } catch (error) {
       console.error("Failed to fetch events:", error);

@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { memo } from "react";
 import { GoArrowDownRight } from "react-icons/go";
 
 const EventCard = ({
@@ -49,10 +50,9 @@ const EventCard = ({
 const PreviousEvents = () => {
   const [events, setEvents] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
-  console.log(process.env.DEPLOYMENT_URL)
 
   React.useEffect(() => {
-    fetch(`${process.env.DEPLOYMENT_URL}/api/events/status`)
+    fetch(`${process.env.NEXT_PUBLIC_DEPLOYMENT_URL}/api/events/status`)
       .then((response) => response.json())
       .then((data) => {
         const formattedEvents = data.past.map((event) => ({
@@ -93,4 +93,4 @@ const PreviousEvents = () => {
   );
 };
 
-export default PreviousEvents;
+export default memo(PreviousEvents);
