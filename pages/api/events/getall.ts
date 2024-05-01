@@ -1,13 +1,13 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { MongoClient } from 'mongodb';
-import Cors from 'cors';
+// import Cors from 'cors';
 
-const cors = Cors({
-  methods: 'GET',
-});
+// const cors = Cors({
+//   methods: 'GET',
+// });
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-    await cors(req, res);
+    // await cors(req, res);
     const uri = process.env.DB_URI;
     const dbName = "studentcouncil"; //Database name
     const eventCollection = "events"; // Replace with your database name

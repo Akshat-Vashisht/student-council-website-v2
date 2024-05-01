@@ -49,10 +49,10 @@ const EventCard = ({
 const PreviousEvents = () => {
   const [events, setEvents] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
-  console.log(process.env.DEPLOYMENT_URL)
+  
 
   React.useEffect(() => {
-    fetch(`${process.env.DEPLOYMENT_URL}/api/events/status`)
+    fetch("/api/events/status")
       .then((response) => response.json())
       .then((data) => {
         const formattedEvents = data.past.map((event) => ({
